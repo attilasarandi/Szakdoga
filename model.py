@@ -29,7 +29,7 @@ gray = cv2.resize((cv2.cvtColor(np.float32(image), cv2.COLOR_RGB2HSV))[:, :, 1],
 steering_angle = keras_predict(model, gray)
 
 
-'if speed > speed_limit:'\
+'if speed > speed_limit:'
 '    speed_limit = min_speed'
 'else:'
 '    speed_limit = max_speed'
